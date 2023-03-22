@@ -1,6 +1,6 @@
 {
-  "name": "GandiSites",
-  "version": "0.2.0",
+  "name": "CliveMurray",
+  "version": "0.3.0",
   "private": "true",
   "scripts": {
     "start": "node server.js",
