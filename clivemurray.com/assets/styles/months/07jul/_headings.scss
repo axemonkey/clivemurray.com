@@ -1,0 +1,47 @@
+// h1,
+// h2,
+// h3 {
+//   font-family: $headingFont;
+// }
+
+h1,
+h2,
+h3 {
+	text-shadow: $smallShadow;
+}
+
+h1 {
+	letter-spacing: -4px;
+	letter-spacing: normal;
+	font-weight: normal;
+	font-style: italic;
+
+	@media (min-width: $breakpoint) {
+		font-size: 4em;
+		letter-spacing: normal;
+	}
+}
+
+h2 {
+	font-size: 1.5em;
+	margin: 20px auto;
+	font-style: italic;
+
+	@media (min-width: $breakpoint) {
+		font-size: 2em;
+	}
+}
+
+main h2 {
+	text-shadow: $smallShadow;
+	text-align: left;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-style: italic;
+
+	@media (min-width: $breakpoint) {
+		font-size: 1.5em;
+	}
+}

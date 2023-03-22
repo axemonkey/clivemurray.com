@@ -1,0 +1,35 @@
+p {
+	margin: 0 0 1em;
+	font-size: $bodyFontSizeSmallscreens;
+	line-height: 1.5;
+
+	@media (min-width: $breakpoint) {
+		font-size: $bodyFontSize;
+	}
+}
+
+main p {
+	@media (min-width: $breakpoint) {
+		// text-align: justify;
+	}
+}
+
+footer p {
+	text-align: right;
+	font-size: $bodyFontSize;
+}
+
+ol,
+ul {
+	margin: 1.25rem 0;
+}
+
+li {
+	font-size: $bodyFontSizeSmallscreens;
+	line-height: 1.5;
+	margin: 0.5rem 0;
+
+	@media (min-width: $breakpoint) {
+		font-size: $bodyFontSize;
+	}
+}

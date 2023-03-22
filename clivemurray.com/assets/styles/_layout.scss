@@ -1,0 +1,35 @@
+header {
+	margin-top: 30px;
+}
+
+main {
+	max-width: $maxWidth;
+	margin: 20px auto 10px;
+	padding: 20px;
+	background-color: $panelColour;
+	color: $panelTextColour;
+
+	@media (min-width: $breakpoint) {
+		margin: 40px auto 0;
+		padding: 40px;
+		box-shadow: 10px 10px 2px $shadowColour;
+		border-radius: 4px;
+	}
+}
+
+main :first-child {
+	margin-top: 0;
+}
+
+main :last-child {
+	margin-bottom: 0;
+}
+
+footer {
+	max-width: $maxWidth;
+	margin: 10px auto;
+
+	@media (min-width: $breakpoint) {
+		margin: 20px auto;
+	}
+}

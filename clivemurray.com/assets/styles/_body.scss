@@ -1,0 +1,34 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: $backgroundColour;
+	color: $textColour;
+	margin: 0;
+	font-size: 1.6em;
+	font-family: $copyFont;
+	font-weight: 300;
+	text-align: left;
+
+	@media (min-width: $breakpoint) {
+		background-attachment: fixed;
+		padding-bottom: 0;
+		font-size: 1.8em;
+	}
+}
+
+// body.pride {
+// 	background: none;
+// 	background:
+// 		repeating-radial-gradient(circle at bottom left, $colors),
+// 		repeating-radial-gradient(circle at bottom right, $colors);
+// 	background-blend-mode: overlay;
+// 	height: 100vh;
+// 	background-attachment: fixed;
+// 	background-position: center bottom;
+// }
