@@ -2,10 +2,10 @@ body {
 	background-position: left bottom;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
-	background-image: url("/images/photo_wes.jpg");
+	background-image: url("/public/images/photo_wes.jpg");
 	background-image: image-set(
-		url("/images/photo_wes.avif") type("image/avif"),
-		url("/images/photo_wes.jpg") type("image/jpeg")
+		url("/public/images/photo_wes.avif") type("image/avif"),
+		url("/public/images/photo_wes.jpg") type("image/jpeg")
 	);
 	padding-bottom: 740px;
 }
