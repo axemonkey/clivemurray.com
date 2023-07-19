@@ -1,6 +1,6 @@
 {
   "name": "CliveMurray",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "private": "true",
   "scripts": {
     "start": "npx @11ty/eleventy --input=./clivemurray.com --serve",
