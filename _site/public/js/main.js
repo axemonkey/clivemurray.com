@@ -99,6 +99,7 @@ const writeStrapline = thisMonth => {
 	document.querySelector('header h2').innerHTML = straps[Math.floor(Math.random() * straps.length)];
 };
 
+// eslint-disable-next-line no-unused-vars
 const writeStyleOfTheMonth = thisMonth => {
 	const thisMonthData = monthData[thisMonth];
 
@@ -119,7 +120,7 @@ const init = () => {
 	const thisMonth = today.getMonth();
 	const thisYear = today.getFullYear();
 
-	writeStyleOfTheMonth(thisMonth);
+	// writeStyleOfTheMonth(thisMonth);
 	writeStrapline(thisMonth);
 
 	if (thisMonth === 2) {
