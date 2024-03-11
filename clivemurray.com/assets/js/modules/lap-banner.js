@@ -49,14 +49,14 @@ const lapBanner = {
 	assembleStyles: () => {
 		let str = '';
 
-		str += '.c-lap-banner {width: 100%;position: fixed;left: 0;bottom: 0;background: rgba(0, 0, 0, 90%);font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.5rem;}';
+		str += '.c-lap-banner {width: 100%;position: fixed;left: 0;bottom: 0;background: rgba(0, 0, 0, 90%);font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.5rem; padding-top: 40px; @media (min-width: 600px) {padding-top: 0;} }';
 		str += '.c-lap-banner p {color: #fff; font-size: 1.5em;}';
 
 		str += '.c-lap-banner-inner {max-width: 800px; margin: auto; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px;}';
 		str += '.c-lap-banner__copy {padding: 10px 0; /*background: rgba(255, 0, 0, 50%);*/}';
 
 		str += '.c-lap-banner-inner img {display: block; aspect-ratio: 1 / 1; width: 150px; height: 150px; flex-shrink: 0; overflow: hidden;}';
-		str += '.c-lap-banner__headline {letter-spacing: 1px; text-shadow: 0 0 4px rgba(92, 219, 255, 80%)}';
+		str += '.c-lap-banner__headline {padding: 0 10px; letter-spacing: 1px; text-shadow: 0 0 4px rgba(92, 219, 255, 80%); @media (min-width: 600px) {padding: 0;} }';
 		str += '.c-lap-banner__link {text-align: center;}';
 		str += '.c-lap-banner__link a {text-decoration: none; color: #000; background-color: #5cdbff; border-radius: 100px; display: inline-block; padding: 7px 15px 5px; font-weight: bold; box-shadow: 0 0 4px rgba(255, 255, 255, 80%);}';
 		str += '.c-lap-banner__link a:hover {background: #fff;}';
