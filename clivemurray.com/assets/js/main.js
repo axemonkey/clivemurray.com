@@ -1,3 +1,5 @@
+import {lapBanner} from './modules/lap-banner.js';
+
 const monthData = [
 	{
 		month: 'jan',
@@ -126,6 +128,9 @@ const init = () => {
 	if (thisMonth === 2) {
 		sinclairResearch(thisYear);
 	}
+
+	document.body.classList.add('js');
+	lapBanner.init();
 };
 
 window.addEventListener('load', init);
