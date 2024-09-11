@@ -122,7 +122,7 @@ const init = () => {
 	const thisMonth = today.getMonth();
 	const thisYear = today.getFullYear();
 
-	// writeStyleOfTheMonth(thisMonth);
+	writeStyleOfTheMonth(thisMonth);
 	writeStrapline(thisMonth);
 
 	if (thisMonth === 2) {

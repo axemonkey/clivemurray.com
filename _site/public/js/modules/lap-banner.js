@@ -1,6 +1,6 @@
 const lapBanner = {
 	storageKey: 'loveAndPainkillers-banner-config',
-	numberOfDaysToHideBanner: 7,
+	numberOfDaysToHideBanner: 30,
 	init: () => {
 		// if not cookie
 		if (lapBanner.cookieCheck()) {
@@ -13,6 +13,7 @@ const lapBanner = {
 		const lsObj = JSON.parse(ls);
 		if (lsObj && lsObj.cookieDismissed && lapBanner.isCookieStillGood(lsObj.cookieDismissed)) {
 			console.log(`LAP Banner cookie found. Banner was dismissed within the previous ${lapBanner.numberOfDaysToHideBanner} days. Do not show banner.`);
+			console.log('Of course, the lovely user is still perfectly free to visit https://loveandpainkillers.com/ if they so wish.');
 			return false;
 		}
 		return true;
