@@ -1,6 +1,6 @@
 const lapBanner = {
 	storageKey: 'loveAndPainkillers-banner-config',
-	numberOfDaysToHideBanner: 30,
+	numberOfDaysToHideBanner: 90,
 	init: () => {
 		// if not cookie
 		if (lapBanner.cookieCheck()) {
