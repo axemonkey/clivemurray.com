@@ -1,0 +1,124 @@
+@import "partials/settings";
+
+@import "partials/months/03mar/colours";
+@import "partials/months/03mar/fonts";
+
+@import "partials/main";
+
+// overrides here
+@import "partials/months/03mar/headings";
+
+html {
+	background-color: $backgroundColour;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url("/public/images/speccy.png");
+	height: 100%;
+}
+
+body {
+	background: none;
+	padding-bottom: 0;
+}
+
+header {
+	margin-top: 10px;
+	padding-bottom: 25px;
+
+	h1 {
+		text-align: left;
+	}
+
+	h2 {
+		text-align: left;
+		margin: 0 10px 10px 17px;
+	}
+}
+
+main {
+	max-width: 750px;
+	margin: 10px 10px 10px 20px;
+	padding: 0;
+	border: none;
+	background: none;
+
+	h3 {
+		margin-top: 2em;
+	}
+
+	p,
+	li {
+		text-align: left;
+		font-size: 1.2em;
+
+		@media (min-width: $breakpoint) {
+			font-size: 1.6em;
+		}
+	}
+
+	a {
+		border: none;
+		text-decoration: none;
+		background-color: #fff;
+		color: #000;
+
+		&:hover {
+			background-color: #000;
+			color: #fff;
+			animation: 1s blinker linear infinite;
+		}
+	}
+
+	.support a {
+		background: none;
+
+		&:hover {
+			background: none;
+			animation: none;
+		}
+	}
+}
+
+footer {
+	max-width: none;
+	padding: 2em 20px 0;
+	margin-bottom: 0;
+
+	p {
+		text-align: center;
+		margin-bottom: 10px;
+		font-size: 1.4em;
+	}
+}
+
+@keyframes blinker {
+	0% {
+		background-color: #fff;
+		color: #000;
+	}
+
+	49% {
+		background-color: #fff;
+		color: #000;
+	}
+
+	50% {
+		background-color: #000;
+		color: #fff;
+	}
+
+	99% {
+		background-color: #000;
+		color: #fff;
+	}
+
+	100% {
+		background-color: #fff;
+		color: #000;
+	}
+}
+
+.notice {
+	border-radius: 0;
+}

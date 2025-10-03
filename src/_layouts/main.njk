@@ -12,7 +12,20 @@
 	<meta name="keywords" content="clive, murray, clive murray, clivemurray, axemonkey, earthman, rock, guitar, guitarist, ibanez, blackmachine, indigo down, indigodown">
 	<link rel="icon" href="/public/images/favicon.ico" type="image/x-icon">
 
-	<link rel="stylesheet" id="style-of-the-month" type="text/css">
+	<link rel="stylesheet" id="style-of-the-month" type="text/css"
+		data-cssjan="{{assets.jan.css}}"
+		data-cssfeb="{{assets.feb.css}}"
+		data-cssmar="{{assets.mar.css}}"
+		data-cssapr="{{assets.apr.css}}"
+		data-cssmay="{{assets.may.css}}"
+		data-cssjun="{{assets.jun.css}}"
+		data-cssjul="{{assets.jul.css}}"
+		data-cssaug="{{assets.aug.css}}"
+		data-csssep="{{assets.sep.css}}"
+		data-cssoct="{{assets.oct.css}}"
+		data-cssnov="{{assets.nov.css}}"
+		data-cssdec="{{assets.dec.css}}"
+	>
 	<link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon">
 </head>
 
@@ -28,6 +41,6 @@
 
 	{% include "footer.njk" %}
 
-	<script type="module" src="/public/js/main.js"></script>
+	<script type="module" src="/public/js/{{assets.main.js}}"></script>
 
 </body>

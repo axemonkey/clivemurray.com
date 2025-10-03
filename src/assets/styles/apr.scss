@@ -1,0 +1,73 @@
+@import "partials/settings";
+
+@import "partials/months/04apr/colours";
+@import "partials/months/04apr/fonts";
+
+@import "partials/main";
+
+// overrides here
+
+$theShadow: 8px 8px 0 $shadowColour;
+$smallShadow: 5px 5px 0 $shadowColour;
+
+html {
+	height: 100%;
+}
+
+body {
+	background-position: -75px bottom;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url("/public/images/red_posterized.png");
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+	height: 100%;
+	padding-bottom: 800px;
+
+	@media (min-width: $breakpoint) {
+		padding-bottom: 0;
+	}
+}
+
+header {
+	margin: 10px 20px;
+
+	h1,
+	h2 {
+		text-align: right;
+		font-family: $headingFont;
+		text-shadow: $smallShadow;
+	}
+}
+
+main {
+	max-width: $maxWidth;
+	margin: 10px 20px;
+	padding: 20px;
+	background-color: $panelColour;
+	color: $panelTextColour;
+
+	@media (min-width: $breakpoint) {
+		margin: 10px 20px;
+		padding: 40px;
+		box-shadow: $theShadow;
+		border-radius: 2px;
+	}
+}
+
+p,
+li {
+	text-align: left;
+	letter-spacing: -1px;
+}
+
+footer {
+	max-width: none;
+	margin: 10px 20px;
+
+	p {
+		text-align: left;
+	}
+}

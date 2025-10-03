@@ -1,0 +1,53 @@
+h1,
+h2,
+h3 {
+	font-family: $headingFont;
+}
+
+h1,
+h2 {
+	text-shadow:
+		1px 1px 0 #eee,
+		0 1px 0 #eee,
+		1px 0 0 #eee;
+	color: $backgroundColour;
+}
+
+h1 {
+	font-size: 2em;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+
+	@media (min-width: $breakpoint) {
+		font-size: 4em;
+	}
+}
+
+h2 {
+	font-size: 1.5em;
+	margin: 20px auto;
+
+	@media (min-width: $breakpoint) {
+		font-size: 2em;
+	}
+}
+
+main {
+	h2 {
+		text-shadow: none;
+		text-align: left;
+	}
+
+	h3 {
+		font-size: 1.2em;
+
+		@media (min-width: $breakpoint) {
+			font-size: 1.5em;
+		}
+	}
+
+	h2,
+	h3 {
+		border-bottom: 1px solid $panelTextColour;
+	}
+}

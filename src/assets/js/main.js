@@ -1,117 +1,122 @@
 const monthData = [
 	{
-		month: 'jan',
+		month: "jan",
 	},
 	{
-		month: 'feb',
+		month: "feb",
 	},
 	{
-		month: 'mar',
+		month: "mar",
 	},
 	{
-		month: 'apr',
+		month: "apr",
 	},
 	{
-		month: 'may',
+		month: "may",
 	},
 	{
-		month: 'jun',
+		month: "jun",
 	},
 	{
-		month: 'jul',
+		month: "jul",
 		credit: {
-			name: 'Dakota Roos',
-			handle: '@dakotaroosphotography',
+			name: "Dakota Roos",
+			handle: "@dakotaroosphotography",
 		},
 	},
 	{
-		month: 'aug',
+		month: "aug",
 	},
 	{
-		month: 'sep',
+		month: "sep",
 		credit: {
-			name: 'Timothy Eberly',
-			handle: '@timothyeberly',
+			name: "Timothy Eberly",
+			handle: "@timothyeberly",
 		},
 	},
 	{
-		month: 'oct',
+		month: "oct",
 		credit: {
-			name: 'Alfred Schrock',
-			handle: '@puregeorgia',
+			name: "Alfred Schrock",
+			handle: "@puregeorgia",
 		},
 	},
 	{
-		month: 'nov',
+		month: "nov",
 		credit: {
-			name: 'Anne Nygård',
-			handle: '@polarmermaid',
+			name: "Anne Nygård",
+			handle: "@polarmermaid",
 		},
 	},
 	{
-		month: 'dec',
+		month: "dec",
 		credit: {
-			name: 'Timothy Eberly',
-			handle: '@timothyeberly',
+			name: "Timothy Eberly",
+			handle: "@timothyeberly",
 		},
 	},
 ];
 
 const straps = [
-	'I play guitar, you know',
-	'Now in colours!',
-	'display: bloke;',
-	'It’s good for you',
-	'HACKA LÖKEN!',
-	'Always running',
-	'Web stuff since 1997',
-	'Disinformation superlayby',
-	'At the forefront of the retreat',
-	'More harmonies',
-	'Do you have any grey poupon?',
-	'He’s beginning to believe',
-	'It’s not the years, it’s the mileage',
-	'Be excellent to each other',
-	'Alsø wik',
-	'Alsø alsø wik',
-	'I know where Bruce Lee lives',
-	'It’s all relative',
-	'JEM777LNG #407',
-	'Never put a sock in a toaster',
-	'Never put jam on a magnet',
-	'Thou shalt not question Stephen Fry',
-	'Cough drop and roll',
+	"I play guitar, you know",
+	"Now in colours!",
+	"display: bloke;",
+	"It’s good for you",
+	"HACKA LÖKEN!",
+	"Always running",
+	"Web stuff since 1997",
+	"Disinformation superlayby",
+	"At the forefront of the retreat",
+	"More harmonies",
+	"Do you have any grey poupon?",
+	"He’s beginning to believe",
+	"It’s not the years, it’s the mileage",
+	"Be excellent to each other",
+	"Alsø wik",
+	"Alsø alsø wik",
+	"I know where Bruce Lee lives",
+	"It’s all relative",
+	"JEM777LNG #407",
+	"Never put a sock in a toaster",
+	"Never put jam on a magnet",
+	"Thou shalt not question Stephen Fry",
+	"Cough drop and roll",
 ];
 
-const sinclairResearch = year => {
-	document.querySelector('.copyright').innerHTML = `&copy; ${year} Clive Murray Research Ltd`;
+const sinclairResearch = (year) => {
+	document.querySelector(".copyright").innerHTML =
+		`&copy; ${year} Clive Murray Research Ltd`;
 };
 
-const writeStrapline = thisMonth => {
-	if (thisMonth === 2) { // march
-		straps.push('R Tape loading error, 0:1');
+const writeStrapline = (thisMonth) => {
+	if (thisMonth === 2) {
+		// march
+		straps.push("R Tape loading error, 0:1");
 	}
 
-	if (thisMonth === 5) { // june
-		straps.push('HAPPY PRIDE', 'He/Him for now at least');
+	if (thisMonth === 5) {
+		// june
+		straps.push("HAPPY PRIDE", "He/Him for now at least");
 	}
 
-	document.querySelector('header h2').innerHTML = straps[Math.floor(Math.random() * straps.length)];
+	document.querySelector("header h2").innerHTML =
+		straps[Math.floor(Math.random() * straps.length)];
 };
 
 // eslint-disable-next-line no-unused-vars
-const writeStyleOfTheMonth = thisMonth => {
+const writeStyleOfTheMonth = (thisMonth) => {
 	const thisMonthData = monthData[thisMonth];
-
-	document.querySelector('#style-of-the-month').href = `/public/css/style-${thisMonthData.month}.css`;
+	const monthLinkEl = document.querySelector("#style-of-the-month");
+	const monthCssFilename = monthLinkEl.dataset[`css${thisMonthData.month}`];
+	monthLinkEl.href = `/public/css/${monthCssFilename}`;
 
 	if (thisMonthData.credit) {
-		const creditEl = document.querySelector('.image-credit');
-		const unsplashLink = creditEl.querySelector('.unsplash-link');
+		const creditEl = document.querySelector(".image-credit");
+		const unsplashLink = creditEl.querySelector(".unsplash-link");
 
 		unsplashLink.href = `https://unsplash.com/${thisMonthData.credit.handle}?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText`;
 		unsplashLink.innerHTML = thisMonthData.credit.name;
-		creditEl.classList.remove('hide');
+		creditEl.classList.remove("hide");
 	}
 };
 
@@ -127,7 +132,7 @@ const init = () => {
 		sinclairResearch(thisYear);
 	}
 
-	document.body.classList.add('js');
+	document.body.classList.add("js");
 };
 
-window.addEventListener('load', init);
+window.addEventListener("load", init);

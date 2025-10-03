@@ -1,0 +1,18 @@
+@import "https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap";
+
+@font-face {
+	font-family: "Bodoni72OldStyle";
+	src: url("/public/fonts/BodoniSvtyTwoOSITCTT-BookIt.woff2") format("woff2");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "OswaldLight";
+	src: url("/public/fonts/Oswald-Light.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+$copyFont: "OswaldLight", sans-serif;
+$headingFont: "Bodoni72OldStyle", serif;
