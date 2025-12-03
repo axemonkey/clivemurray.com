@@ -1,8 +1,30 @@
+// Cormorant Infant
 @font-face {
-	font-family: "Cormorant Garamond";
-	src: url("/public/fonts/CormorantGaramond-Regular.woff2") format("woff2");
+	font-family: "CormorantInfant"; // by Catharsis Fonts - https: //www.myfonts.com/collections/catharsis-fonts-foundry
+	src: url("/public/fonts/CormorantInfant-Regular.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
+}
+
+@font-face {
+	font-family: "CormorantInfant";
+	src: url("/public/fonts/CormorantInfant-Bold.woff2") format("woff2");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "CormorantInfant";
+	src: url("/public/fonts/CormorantInfant-Italic.woff2") format("woff2");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "CormorantInfant";
+	src: url("/public/fonts/CormorantInfant-BoldItalic.woff2") format("woff2");
+	font-weight: bold;
+	font-style: italic;
 }
 
 @font-face {
@@ -12,5 +34,5 @@
 	font-style: normal;
 }
 
-$copyFont: "Cormorant Garamond", serif;
+$copyFont: "CormorantInfant", serif;
 $headingFont: "SpecialElite", monospace;

@@ -57,6 +57,10 @@ header {
 p,
 li {
 	text-shadow: $smallShadow;
+	font-weight: 200;
+	font-variation-settings: "wdth" 250;
+	font-size: $bodyFontSize + 0.2em;
+	letter-spacing: 1px;
 }
 
 footer {

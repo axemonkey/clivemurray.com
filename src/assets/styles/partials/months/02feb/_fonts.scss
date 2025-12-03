@@ -1,37 +1,38 @@
 @font-face {
-	font-family: "DinAlternate";
-	src: url("/public/fonts/DINAlternate-Bold.woff2") format("woff2");
+	font-family: "KlimaBold";
+	src: url("/public/fonts/Klima-Bold.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Cormorant Infant
+@font-face {
+	font-family: "CormorantInfant";
+	src: url("/public/fonts/CormorantInfant-Regular.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "IBMPlexSerif";
-	src: url("/public/fonts/IBMPlexSerif-Light.woff2") format("woff2");
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "IBMPlexSerif";
-	src: url("/public/fonts/IBMPlexSerif-SemiBold.woff2") format("woff2");
+	font-family: "CormorantInfant";
+	src: url("/public/fonts/CormorantInfant-Bold.woff2") format("woff2");
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "IBMPlexSerif";
-	src: url("/public/fonts/IBMPlexSerif-LightItalic.woff2") format("woff2");
+	font-family: "CormorantInfant";
+	src: url("/public/fonts/CormorantInfant-Italic.woff2") format("woff2");
 	font-weight: normal;
 	font-style: italic;
 }
 
 @font-face {
-	font-family: "IBMPlexSerif";
-	src: url("/public/fonts/IBMPlexSerif-SemiBoldItalic.woff2") format("woff2");
+	font-family: "CormorantInfant";
+	src: url("/public/fonts/CormorantInfant-BoldItalic.woff2") format("woff2");
 	font-weight: bold;
 	font-style: italic;
 }
 
-$copyFont: "IBMPlexSerif", serif;
-$headingFont: "DinAlternate", sans-serif;
+$copyFont: "CormorantInfant", serif;
+$headingFont: "KlimaBold", sans-serif;

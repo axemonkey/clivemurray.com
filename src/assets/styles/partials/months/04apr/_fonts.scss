@@ -1,16 +1,37 @@
 @font-face {
-	font-family: "Josefin Sans";
-	src: url("/public/fonts/JosefinSans-Light.woff2") format("woff2");
+	font-family: "CaviarDreams"; // by Lauren Thompson - https://www.nymfont.com/
+	src: url("/public/fonts/CaviarDreams.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "SpecialElite";
+	font-family: "CaviarDreams";
+	src: url("/public/fonts/CaviarDreams_Bold.woff2") format("woff2");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "CaviarDreams";
+	src: url("/public/fonts/CaviarDreams_Italic.woff2") format("woff2");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "CaviarDreams";
+	src: url("/public/fonts/CaviarDreams_BoldItalic.woff2") format("woff2");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "SpecialElite"; // by Astigmatic - astigmatic.com
 	src: url("/public/fonts/SpecialElite-Regular.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
 }
 
-$copyFont: "Josefin Sans", sans-serif;
+$copyFont: "CaviarDreams", sans-serif;
 $headingFont: "SpecialElite", monospace;

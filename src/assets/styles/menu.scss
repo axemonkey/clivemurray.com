@@ -1,3 +1,44 @@
+@font-face {
+	font-family: "Allura"; // by TypeSETit
+	src: url("/public/fonts/Allura-Regular.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Junicode 2
+@font-face {
+	font-family: "Junicode"; // by Peter S. Baker - https://github.com/psb1558/Junicode-font
+	src: url("/public/fonts/Junicode-Light.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Junicode";
+	src: url("/public/fonts/Junicode-Bold.woff2") format("woff2");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Junicode";
+	src: url("/public/fonts/Junicode-LightItalic.woff2") format("woff2");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Junicode";
+	src: url("/public/fonts/Junicode-BoldItalic.woff2") format("woff2");
+	font-weight: bold;
+	font-style: italic;
+}
+
+:root {
+	--heading-font: "Allura", cursive;
+	--body-font: "Junicode", serif;
+}
+
 body {
 	background-color: #603;
 	background-position: center center;
@@ -7,7 +48,7 @@ body {
 	background-image: url("/public/images/menu/carlos-lindner-sjBYA8dAw54-unsplash.jpg");
 	color: #111;
 	font-size: 62.5%;
-	font-family: serif;
+	font-family: var(--body-font);
 	padding: 0;
 
 	@media (min-width: 920px) {
@@ -17,7 +58,7 @@ body {
 
 p {
 	margin: 0 60px 1rem;
-	font-size: 1.5em;
+	font-size: 1.75em;
 	text-align: center;
 	line-height: 1.5;
 }
@@ -45,7 +86,7 @@ a {
 }
 
 h1 {
-	font-family: cursive;
+	font-family: var(--heading-font);
 	font-size: 5em;
 	margin-bottom: 0.4em;
 	text-align: center;
@@ -53,7 +94,7 @@ h1 {
 
 .address {
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.75em;
 }
 
 section {
@@ -68,14 +109,14 @@ footer {
 }
 
 h2 {
-	font-family: cursive;
+	font-family: var(--heading-font);
 	font-size: 30px;
 	margin-bottom: 12px;
 	text-align: center;
 }
 
 h3 {
-	font-family: cursive;
+	font-family: var(--heading-font);
 	font-size: 2.5em;
 	margin: 10px 0;
 	text-align: center;
@@ -83,7 +124,7 @@ h3 {
 
 li {
 	width: 100%;
-	font-size: 1.8em;
+	font-size: 1.9em;
 	margin: 5px 0 10px;
 
 	.price {
