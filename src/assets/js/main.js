@@ -103,20 +103,20 @@ const writeStrapline = (thisMonth) => {
 		straps[Math.floor(Math.random() * straps.length)];
 };
 
-// eslint-disable-next-line no-unused-vars
 const writeStyleOfTheMonth = (thisMonth) => {
 	const thisMonthData = monthData[thisMonth];
-	const monthLinkEl = document.querySelector('#style-of-the-month');
-	const monthCssFilename = monthLinkEl.dataset[`css${thisMonthData.month}`];
-	monthLinkEl.href = `/public/css/${monthCssFilename}`;
+	const monthLinkElement = document.querySelector('#style-of-the-month');
+	const monthCssFilename =
+		monthLinkElement.dataset[`css${thisMonthData.month}`];
+	monthLinkElement.href = `/public/css/${monthCssFilename}`;
 
 	if (thisMonthData.credit) {
-		const creditEl = document.querySelector('.image-credit');
-		const unsplashLink = creditEl.querySelector('.unsplash-link');
+		const creditElement = document.querySelector('.image-credit');
+		const unsplashLink = creditElement.querySelector('.unsplash-link');
 
 		unsplashLink.href = `https://unsplash.com/${thisMonthData.credit.handle}?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText`;
 		unsplashLink.innerHTML = thisMonthData.credit.name;
-		creditEl.classList.remove('hide');
+		creditElement.classList.remove('hide');
 	}
 };
 
