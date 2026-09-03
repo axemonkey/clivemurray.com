@@ -28,7 +28,7 @@
 		"@springernature/assets-pipeline": "^0.2.0",
 		"@springernature/eslint-config": "^8.0.0",
 		"@springernature/stylelint-config": "^3.0.0",
-		"baseline-browser-mapping": "^2.9.9",
+		"baseline-browser-mapping": "^2.11.20",
 		"eslint": "^9.39.3",
 		"eslint-plugin-import": "^2.32.0",
 		"eslint-plugin-no-use-extend-native": "^0.7.2",
