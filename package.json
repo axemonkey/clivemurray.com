@@ -36,7 +36,7 @@
 		"markdown-it-anchor": "^10.0.0",
 		"markdown-it-attrs": "^5.0.1",
 		"markdown-it-footnote": "^4.0.0",
-		"npm-run-all2": "^9.0.3",
+		"npm-run-all2": "^9.0.4",
 		"onchange": "^7.1.0",
 		"prettier": "^3.9.10",
 		"sharp": "^0.35.5",
