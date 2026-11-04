@@ -10,11 +10,15 @@
 			"type": "copyAssets",
 			"assets": [
 				{
+					"source": "src/assets/files",
+					"destination": "src/public/files"
+				},
+				{
 					"source": "src/assets/fonts",
 					"destination": "src/public/fonts"
 				}
 			],
-			"watchPatterns": ["src/assets/fonts/**/*"]
+			"watchPatterns": ["src/assets/files/**/*", "src/assets/fonts/**/*"]
 		},
 		{
 			"name": "Lint sass files with stylelint",
